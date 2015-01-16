@@ -12,4 +12,7 @@ if %gamest% == p goto play
 
 :tut
 
+
 :play
+cls
+
