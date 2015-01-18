@@ -9,6 +9,15 @@ set /p gamest=
 if %gamest% == t goto tut
 if %gamest% == p goto play
 
+:loss
+cls
+echo U LOSE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+echo Play again? Y/N
+set /p lossChoice=
+if lossChoice == y goto play
+if lossChoice == n goto home
+if lossChoice == Y goto play
+if lossChoice == N goto home
 
 :tut
 cls
@@ -22,9 +31,11 @@ goto home
 set /a life=%life%-1
 if %life% == 0 goto loss
 goto %q%
+
 :play
 set life=5
 cls
+
 //Make sure you set the question number!
 :q1
 set q=q1
