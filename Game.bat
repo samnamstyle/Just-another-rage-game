@@ -5,9 +5,15 @@ cls
 echo Just Another Rage Game...
 echo Press T to enter the tutorial.
 echo Press P to play!
+echo Press I for info
 set /p gamest=
 if %gamest% == t goto tut
 if %gamest% == p goto play
+if %gamest% == i goto info
+
+:info
+start GameInfo.html
+goto home
 
 :loss
 cls
