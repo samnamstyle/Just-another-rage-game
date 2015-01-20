@@ -123,3 +123,47 @@ if %answer% == b goto fail
 if %answer% == c goto fail
 if %answer% == d goto fail
 
+
+
+:q5
+set q=q5
+echo (4.)
+echo.
+echo Lives: %life%
+echo.
+echo Can U get this question right?
+echo.
+echo.
+echo (A) no
+echo (B) no
+echo (C) no
+echo (D) no
+set /p answer=
+if %answer% == a goto fail 
+if %answer% == b goto fail
+if %answer% == c goto fail
+if %answer% == d goto fail
+if %answer% == e goto q6
+
+
+
+:q6
+set q=q6
+echo (4.)
+echo.
+echo Lives: %life%
+echo.
+echo What Happens when you pick up a mouse
+echo.
+echo.
+echo (A) It Sh*ts in ur hand
+echo (B) :(
+echo (C) Poop
+echo (D) Nothing
+set /p answer=
+if %answer% == a goto fail 
+if %answer% == b goto fail
+if %answer% == c goto fail
+if %answer% == d goto q7
+
+
